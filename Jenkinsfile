@@ -4,17 +4,17 @@ pipeline {
     stages {
         stage('Installing bcrypt...') {
             steps {
-                sh 'npm bcrypt '
+                sh 'npm install bcrypt '
             }
         }
         stage('Installing mongoose...') {
             steps {
-                sh 'npm mongoose '
+                sh 'npm install mongoose '
             }
         }
         stage('Installing jsonwebtoken...') {
             steps {
-                sh 'npm jsonwebtoken '
+                sh 'npm install jsonwebtoken '
             }
         }
         stage('Installing...') {

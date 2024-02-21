@@ -23,9 +23,14 @@ pipeline {
             }
         }
          
-        stage('Building...') {
+        stage('NPM V...') {
             steps {
-                sh 'npm start'
+                sh 'npm --version'
+            }
+        }
+        stage('Node V...') {
+            steps {
+                sh 'npm --version'
             }
         }
     }
